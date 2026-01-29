@@ -20,7 +20,7 @@ class User(Base):
     email = Column(String)
     password = Column(String)
 
-# CRUD Operations
+# CRUD
 def create_user(name, email, password):
     new_user = User(name=name, email=email, password=password)
     session.add(new_user)
